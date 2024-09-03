@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Aventura na Praia</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="praia com amigos.jpeg" alt="">
+            <p>Você e seus amigos decidem passar o dia explorando uma praia isolada que ouviram falar, conhecida por suas belezas naturais e lendas de um tesouro perdido. Ao chegar, a maré baixa revela algo misterioso na areia.</p>
+            <button class="btn-proximo" data-proximo="1">Investigar o objeto</button>
+            <button class="btn-proximo" data-proximo="2">Ignorar e continuar explorando a praia</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Você se aproxima e percebe que é um antigo mapa parcialmente enterrado. Ele parece indicar a localização de algo escondido nas proximidades. Seus amigos estão animados e querem seguir o mapa.</p>
+            <button class="btn-proximo" data-proximo="3">Seguir o mapa</button>
+            <button class="btn-proximo" data-proximo="4">Guardar o mapa e curtir o dia na praia</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Você decide ignorar o objeto e continua explorando a praia. Durante a caminhada, você encontra uma gruta secreta escondida por trás de algumas rochas. Parece que há algo mais do que apenas natureza por aqui.</p>
+            <button class="btn-proximo" data-proximo="5">Explorar a gruta</button>
+            <button class="btn-proximo" data-proximo="6">Voltar e verificar o objeto na areia</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>Seguindo o mapa, você e seus amigos chegam a um local indicado por um "X". Começam a cavar e encontram uma velha caixa de madeira trancada.</p>
+            <button class="btn-proximo" data-proximo="7">Tentar abrir a caixa</button>
+            <button class="btn-proximo" data-proximo="8">Deixar a caixa como está e sair dali</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="relaxando na praia.jpeg" alt="relaxando na praia">
+            <p>Você decide guardar o mapa e aproveitar o dia na praia. Apesar de não descobrir o que ele esconde, você passa um dia maravilhoso com seus amigos.</p>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>Ao explorar a gruta, você encontra inscrições antigas nas paredes e um pequeno baú escondido em uma fenda. A atmosfera dentro da gruta é ao mesmo tempo emocionante e misteriosa.</p>
+            <button class="btn-proximo" data-proximo="9">Abrir o baú</button>
+            <button class="btn-proximo" data-proximo="10">Deixar o baú e sair da gruta</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>Você retorna à praia e finalmente investiga o objeto na areia. Percebe que é um mapa antigo, talvez indicando algo importante na área.</p>
+            <button class="btn-proximo" data-proximo="3">Seguir o mapa</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>Vocês conseguem abrir a caixa e dentro encontram uma coleção de moedas antigas e uma bússola que parece apontar para algum lugar na ilha.</p>
+            <button class="btn-proximo" data-proximo="11">Seguir a direção da bússola</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>Vocês decidem que abrir a caixa pode ser arriscado demais e optam por deixá-la como está. Ao voltar para a praia, sentem que deixaram um mistério para trás.</p>
+            <button class="btn-proximo" data-proximo="12">Mudar de ideia e abrir a caixa</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>Dentro do baú, você encontra um pergaminho antigo com uma mensagem críptica que parece levar a algo escondido nas redondezas. Será que este é o primeiro passo para um grande tesouro?</p>
+            <button class="btn-proximo" data-proximo="11">Seguir as instruções do pergaminho</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>Decidindo não mexer no baú, você sai da gruta. No entanto, não consegue parar de pensar no que poderia estar escondido lá dentro.</p>
+            <button class="btn-proximo" data-proximo="13">Voltar e abrir o baú</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <img src="tesouro na praia.jpeg" alt="encontrando um tesouro escondido na praia">
+            <p>Seguindo a bússola ou as instruções do pergaminho, você finalmente encontra um tesouro escondido: joias antigas e artefatos que parecem ter grande valor histórico. Sua aventura na praia se torna uma descoberta inesquecível!</p>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <p>Mudando de ideia, você volta e abre a caixa, encontrando uma coleção de moedas antigas e uma bússola misteriosa. A aventura está apenas começando!</p>
+            <button class="btn-proximo" data-proximo="11">Seguir a direção da bússola</button>
+        </div>
+
+        <div class="passo" id="passo-13">
+            <p>Você decide voltar e abrir o baú. Dentro, encontra um pergaminho antigo que pode levar a algo ainda mais incrível!</p>
+            <button class="btn-proximo" data-proximo="11">Seguir as instruções do pergaminho</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
